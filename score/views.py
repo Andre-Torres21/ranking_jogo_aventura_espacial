@@ -12,7 +12,7 @@ def salvar_score(request):
     return Response({"message": "Score salvo com sucesso!", "id": score.id})
 
 @api_view(['GET'])
-def rankings(request):
+def ranking(request):
     scores = Score.objects.order_by('-pontos')
     serializer = ScoreSerializer(scores, many=True)
     return Response(serializer.data)

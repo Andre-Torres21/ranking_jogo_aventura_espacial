@@ -5,5 +5,5 @@ from score import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('salvar_score/', views.salvar_score),
-    path('rankings/', views.rankings),
+    path('ranking/', views.ranking),
 ]
